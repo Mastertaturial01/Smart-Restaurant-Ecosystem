@@ -1,0 +1,54 @@
+/* Global Styles Import */
+@import './themes/variables.css';
+@import './base/reset.css';
+@import './base/typography.css';
+@import './utilities/classes.css';
+@import './components/layout.css';
+@import './components/glassmorphism.css';
+@import './components/dashboard.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Base Styles */
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-neutral-900);
+  background-color: var(--color-neutral-50);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-neutral-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-300);
+  border-radius: var(--radius-base);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-400);
+}
+
+/* Focus Styles */
+:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+/* Selection Styles */
+::selection {
+  background-color: var(--color-primary-200);
+  color: var(--color-primary-900);
+}
